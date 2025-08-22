@@ -1,34 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <div class="logo">ஜவஹர் E</div>
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="Skils.html">Skills</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
+  <section id="projects" class="projects">
+    <h2 style="color:#4CAF50;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">My Projects</h2>
+    <div class="project-container">
+      <!--project 1-->
+      <div class="project-card">
+        <div class="card-content">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYW8d1iaHjc-hvRblynKrK5YKQBiZg3NlmKA&s" alt="Project 1">
+          <h3>Thozhan.AI</h3>
+          <p>A Tamil-English AI chatbot with voice recognition and smart replies.</p>
+          <a href="https://boisterous-profiterole-7d6375.netlify.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+       <!--project 2-->
+      <div class="project-card">
+        <div class="card-content">
+          <img src="data:image/jpeg;base64,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" alt="Project 2">
+          <h3>JobZila</h3>
+          <p>A job portal built with PHP & MySQL, modern UI with green theme.</p>
+          <a href="https://yourlink1.com" target="_blank" class="btn">processing</a>
+        </div>
+      </div>
+        <!--project 3-->
+      <div class="project-card">
+        <div class="card-content">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu-SiQvHsEDmw52x1rdd0Iqy2y1s1ZHnYKgA&s" alt="Project 3">
+          <h3>Guru Holidays</h3>
+          <p>A demo travel agency website with WhatsApp booking integration.</p>
+          <a href="https://lambent-piroshki-446e1b.netlify.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+        <!--project 4-->
+      <div class="project-card">
+        <div class="card-content">
+          <img src="data:image/jpeg;base64,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" alt="Project 4">
+          <h3>Maharaja Ice cream</h3>
+          <p>Full frontend e-commerce clone with cart, product listing & checkout flow.</p>
+          <a href="https://gorgeous-biscuit-a6b9dd.netlify.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+          <!--project 5-->
+      <div class="project-card">
+        <div class="card-content">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdThijch2r-0HErScifNP_anFtHPJaFhI2QA&s" alt="Project 5">
+          <h3>Ezhuthu.AI</h3>
+          <p>Voice-to-Document Tamil-English Assistant with smart text formatting.</p>
+          <a href="https://yourlink1.com" target="_blank" class="btn">processing</a>
+        </div>
+      </div>
+         <!--project 6-->
+      <div class="project-card">
+        <div class="card-content">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTo53ta_NGi-NwoK2uTkI9DYxfesZLh-65SQ&s" alt="Project 6">
+          <h3>Volkswagen website</h3>
+          <p>, Volkswagen has grown from a single model to one of the world's leading automotive manufacturers. </p>
+          <a href="https://relaxed-vacherin-b78631.netlify.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
 
-  <section class="projects">
-    <h1>My Projects</h1>
-    <div class="project-grid">
-      <div class="card">Thozhan.AI - Smart Chatbot</div>
-      <div class="card">JobZila - Job Portal</div>
-      <div class="card">Portfolio Website</div>
-      <div class="card">Amazon Clone</div>
-      <div class="card">Guru Holidays Travel Site</div>
-      <div class="card">Ezhuthu.AI - Voice to Document</div>
     </div>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Jawaher E. Crafted with ❤️ using Tamil tech & frontend passion.</p>
+  </footer>
 </body>
+
 </html>
